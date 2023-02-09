@@ -1,11 +1,13 @@
 ## Git和Github
 
-### 基本流程
+### 创建流程
+
+如果之前在本目录中没有创建git，请依次执行下列语句。
 
 ```bash
 git init // 初始化，使用当前目录作为git仓库
 
-git add -A // 添加当前目录所有文件到暂存区（追踪）
+git add . // 添加当前目录所有文件到暂存区（追踪）
 
 git commit -m "提交说明"  // 将暂存区的内容添加到仓库
 
@@ -19,6 +21,18 @@ git remote add origin git@github.com:Lei00764/cs61a.git
 
 git push -u origin main // 上传代码并合并
 // 第一次push时需要使用-u参数，作用是将本地main分支和远程分支关联起来，默认名称相同
+```
+
+### 基本使用流程
+
+在创建git，并且与github建立联系后，将修改后的文件上传到github的方法。
+
+```bash
+git add .  // 仅发生修改的文件会上传
+
+git commit -m "提交说明
+
+git push
 ```
 
 ### 其他语法
@@ -79,11 +93,17 @@ cd -
 
 
 
+## 函数 functions
+
+Pure function纯函数：接受参数，只返回值，不会产生其他影响。
+
+Sided function带副作用的函数：例如print，会在屏幕上打印指定内容。
 
 
 
+Lab 00 and Lab 01
 
-
+HW 01
 
 
 
