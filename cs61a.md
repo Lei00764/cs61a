@@ -15,7 +15,7 @@ git branch -M main // 创建main分支
 
 // 以上为git命令，可单独在本地运行
 // github相当于一个远程仓库
-
+// 在执行下一行代码前，要创建一个github仓库，这里仓库名是cs61a
 // 远程库的名字就是origin，这是Git默认的叫法（可以改成别的）
 git remote add origin git@github.com:Lei00764/cs61a.git
 
@@ -38,6 +38,8 @@ git push
 ### 其他语法
 
 ```bash
+git status // 显示当前的工作目录下的提交文件状态
+
 git checkout xxx // 切换分支
 
 // -u 表示把本地分支和远程分支进行关联，只在第一次推送的时候需要带 -u 参数
@@ -52,6 +54,7 @@ git push -u origin payment
 
 - 合并分支时的注意点：假设要把 C 分支的代码合并到 A 分支，则必须先切换到 A 分支上，再运行 git merge 命令，来合并 C 分支！
 - 删除分支时的注意点：删除分支不能在该分支上删除该分支
+- 合并分支时的注意点：如果两个人修改的是一个文件的不同位置，在使用merge指令时，git会自动帮我们合并，但若修改的时同一位置，此时会出现冲突！需要人为修改。
 
 ### 创建脚本
 
