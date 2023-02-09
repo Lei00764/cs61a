@@ -99,7 +99,8 @@ cd -
 // 这句话视情况决定要不要
 git pull origin master  // 将远程仓库的内容拉到本地
 
-git rm -r --cached xxx // 删除要移除的文件
+git rm -r --cached xxx // 删除文件 github上
+rm -rf xxx  // 删除文件 git
 
 git commit -m "提示信息"
 
