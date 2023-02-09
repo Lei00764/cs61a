@@ -91,6 +91,20 @@ git commit -m 'deploy'
 cd -
 ```
 
+### 错误上传
+
+有时候文件上传到github上，如果想要删除的话。
+
+```bash
+git pull origin master  // 将远程仓库的内容拉到本地
+
+git rm -r --cached xxx // 删除要移除的文件
+
+git commit -m "提示信息"
+
+git push
+```
+
 
 
 ## 函数 functions
